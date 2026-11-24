@@ -3,7 +3,7 @@ import random
 szabad_helyek = [str(i) for i in range(1, 101)]
 foglalt_helyek = []
 
-print("Köszöntjük a NAKMCS Airlines-nál, ön a Lisaboni közvetlen járatra vesz jegyet")
+print("Köszöntjük a NAKMCS Airlines-nál, ön a Lisszaboni közvetlen járatra vesz jegyet")
 print("\n")
 
 valasztas = input("véletlenszerűen(1) vagy manuálisan(2) akar helyet választani? ")
@@ -30,7 +30,7 @@ elif valasztas == "2":
         for i, elem in enumerate(szabad_helyek, start=1):
             print(elem, end=", " if i % 10 != 0 else "\n")
         print("\n")
-        hely = input("Melyik helyet válsztod? ")
+        hely = input("Melyik helyet választod? ")
         if hely in szabad_helyek:
             foglalt_helyek.append(hely)
             szabad_helyek.remove(hely)
